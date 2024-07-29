@@ -1,0 +1,4 @@
+
+#dependencies
+/my-todo-service/node_modules
+/my-todo-ui/node_modules
