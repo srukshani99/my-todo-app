@@ -10,7 +10,7 @@ My Todo App is just a basic todo tasks tracking app. Usng this simpe app basical
 
 ## Version Details
 
-1. NodeJS - 20.16.0
+1. Node - 20.16.0
 2. NPM - 10.8.1
 3. React - 18.3.1
 4. Other NPM Modules - latest versions have been used in semantic verioning format.
