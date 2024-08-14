@@ -1,25 +1,25 @@
 # My Todo App
 
-My Todo App is just a basic todo tasks tracking app. Usng this simpe app basically users can add new todo tasks, update task status to done or not done, delete task and can serach todo taks from the available list by entering the keywords of the task name.
+My Todo App is just a basic todo task tracking app. Using this simple app, users can add new to-do tasks, update task status to done or not done, delete the task, and search for to-do tasks from the available list by entering the keywords of the task name.
 ###### **Version: 1.0.0**
 
 ## Technologies Used
 **my-todo-ui** - This is the UI component of the application and this is built in ReactJS, Typescript, Redux, HTML, CSS, antd, axios
 
-**my-todo-sevice** - this is the backend service of the application and this is built in NodeJs, ExpressJS, Typescript
+**my-todo-service** - this is the backend service of the application and this is built in NodeJs, ExpressJS, Typescript
 
 ## Version Details
 
 1. Node - 20.16.0
 2. NPM - 10.8.1
 3. React - 18.3.1
-4. Other NPM Modules - latest versions have been used in semantic verioning format.
+4. Other NPM Modules - The latest versions have been used in the semantic versioning format.
    
 ## Project Setup
 You will need node and npm installed globally on your machine.
 
 #### my-todo-ui
-Clone down the repository and switch to **my-todo-ui** module. 
+Clone down the repository and switch to the **my-todo-ui** module. 
 
 1. Install modules:
 `npm install`  
@@ -30,7 +30,7 @@ Clone down the repository and switch to **my-todo-ui** module.
 3. Visit the app:
 `http://localhost:3000` 
 
-#### my-todo-sevice
+#### my-todo-service
 Clone down the repository and switch to **my-todo-service** module. 
 
 1. Install modules:
@@ -44,15 +44,15 @@ Clone down the repository and switch to **my-todo-service** module.
 
 ## Screens
 
-01- Users can see all the available todo tasks.
+01- Users can see all the available to-do tasks.
 
-02- Users can search tasks by their name.
+02- Users can search for tasks by their name.
 
-03- Users can add new task to the list - (default status will set to 'not done')
+03- Users can add new tasks to the list - (default status will be set to 'not done')
 
-04- Users can change status of tasks by clicking the CloseCircle or CheckCircle icon available at each row. (can switch to 'done' from 'not done' and vice versa)
+04- Users can change the status of tasks by clicking the CloseCircle or CheckCircle icon available at each row. (can switch to 'done' from 'not done' and vice versa)
 
-05- Users can delete tasks fom the list by clicking trash icon available at each row.
+05- Users can delete tasks from the list by clicking the trash icon available at each row.
 
 
 
