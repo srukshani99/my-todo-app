@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux';
 import { AddTodo } from './AddTodo'
 import { TodoList } from './TodoList';
 import { SearchTodo } from './SearchTodo';
 import { useAppDispatch } from '../store';
 import { addTaskTodoList, fetchTodoList, modifyTodoTaskStatus, removeTodoTask, searchTodoList } from '../store/actions';
-import { Spin, Modal } from 'antd';
-import { LoadingOutlined } from '@ant-design/icons';
+import { Modal } from 'antd';
 
 const { confirm } = Modal;
 
 export const TodoWrapper = () => {
 
     const dispatch = useAppDispatch();
-    const { loading, success, error, tasksList, taskCreationRes, taskDeleteRes, taskUpdateRes } = useSelector(({ mytodo }: any) => mytodo)
+    const { success, tasksList, taskCreationRes, taskDeleteRes, taskUpdateRes } = useSelector(({ mytodo }: any) => mytodo)
 
     useEffect(() => {
         dispatch(fetchTodoList());

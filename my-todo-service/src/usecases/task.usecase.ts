@@ -10,7 +10,7 @@ let todoTaskList: Task[] = myTasksList;
  * @param key 
  * @returns 
  */
-export const fetchTodoTaskList = async (key: string): Promise<Task[] | undefined> => {
+export const fetchTodoTaskList = (key: string): Task[] | undefined => {
     try {
         if (key) {
             return todoTaskList.filter((task: Task) => {
@@ -30,7 +30,7 @@ export const fetchTodoTaskList = async (key: string): Promise<Task[] | undefined
  * @param requestBody 
  * @returns 
  */
-export const addTodoTask = async (requestBody: any): Promise<Task | undefined> => {
+export const addTodoTask = (requestBody: any): Task | undefined => {
     let newTask: Task | undefined;
     try {
         newTask = { id: Number(Date.now()), title: requestBody.title, status: TASKSTATUS.NOT_DONE };
@@ -47,7 +47,7 @@ export const addTodoTask = async (requestBody: any): Promise<Task | undefined> =
  * @param taskId 
  * @returns 
  */
-export const removeTodoTask = async (taskId: number): Promise<number> => {
+export const removeTodoTask = (taskId: number): number => {
     try {
         todoTaskList = todoTaskList.filter((task: Task) => task.id != taskId);
     } catch (error) {
@@ -63,7 +63,7 @@ export const removeTodoTask = async (taskId: number): Promise<number> => {
  * @param status 
  * @returns 
  */
-export const modifyTodoTaskStatus = async (taskId: number, status: string): Promise<Task | undefined> => {
+export const modifyTodoTaskStatus = (taskId: number, status: string): Task | undefined => {
     let updatedTask: Task | undefined;
     try {
         todoTaskList.map((task: Task) => {

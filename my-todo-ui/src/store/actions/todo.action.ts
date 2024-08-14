@@ -9,7 +9,7 @@ export const fetchTodoList = (): any => {
         disptach(todoStore.actions.todoListFetch());
 
         getTodoTasksList().then((response) => {
-            if(response.status == 200){
+            if(response.status === 200){
                 disptach(todoStore.actions.todoListFetchSuccess(response.data.data));
             }
         })
@@ -25,7 +25,7 @@ export const searchTodoList = (value: string): any => {
         disptach(todoStore.actions.todoListFetch());
 
         getTodoTasksListByTitle(value).then((response) => {
-            if(response.status == 200){
+            if(response.status === 200){
                 disptach(todoStore.actions.todoListFetchSuccess(response.data.data));
             }
         })
@@ -42,7 +42,7 @@ export const addTaskTodoList = (reqData: TodoTask): any => {
         disptach(todoStore.actions.todoTaskCreate());
 
         createTodoTask(reqData).then((response) => {
-            if(response.status == 201){
+            if(response.status === 201){
                 disptach(todoStore.actions.todoTaskCreateSuccess(response.data.data));
             }
         })
@@ -58,7 +58,7 @@ export const modifyTodoTaskStatus = (taskId: number, reqData: {}): any => {
         disptach(todoStore.actions.todoTaskUpdate());
 
         updateTodoTaskStatus(taskId, reqData).then((response) => {
-            if(response.status == 200){
+            if(response.status === 200){
                 disptach(todoStore.actions.todoTaskUpdateSuccess(response.data.data));
             }
         })
@@ -74,7 +74,7 @@ export const removeTodoTask = (taskId: number): any => {
         disptach(todoStore.actions.todoTaskDelete());
 
         deleteTodoTask(taskId).then((response) => {
-            if(response.status == 200){
+            if(response.status === 200){
                 disptach(todoStore.actions.todoTaskDeleteSuccess(response.data.data));
             }else{
                 disptach(todoStore.actions.todoTaskDeleteFail());
